@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mettravels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mettravels</h1>
+    <p>Explore. Dream. Discover.</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="packages">
+    <h2>Travel Packages</h2>
+    <div class="package-list" id="package-list"></div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Mettravels is your trusted travel partner. We help you explore the world, one journey at a time.</p>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Trip</h2>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <select name="package" id="package-options" required>
+        <option value="">Select Package</option>
+      </select>
+      <input type="date" name="date" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:Mettravels@gmail.com">Mettravels@gmail.com</a></p>
+    <p>Phone: 09072351352</p>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
