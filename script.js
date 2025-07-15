@@ -1,6 +1,7 @@
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("http://localhost:3000/api/packages")
+  fetch("https://mettravels-backend.onrender.com
+/api/packages")
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById("package-list");
@@ -26,7 +27,8 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("contact-form").addEventListener("submit", e => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target).entries());
-    fetch("http://localhost:3000/api/contact", {
+    fetch("https://mettravels-backend.onrender.com
+/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -36,7 +38,8 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("booking-form").addEventListener("submit", e => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target).entries());
-    fetch("http://localhost:3000/api/book", {
+    fetch("https://mettravels-backend.onrender.com
+/api/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
